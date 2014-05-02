@@ -1,5 +1,7 @@
 package fr.newland.users
 
+import fr.newland.news.News
+
 class User {
     String username
     String password
