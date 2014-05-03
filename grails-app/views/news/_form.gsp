@@ -1,4 +1,4 @@
-<%@ page import="fr.newland.news.News" %>
+<%@ page import="fr.newland.users.User; fr.newland.news.News" %>
 
 
 
@@ -7,7 +7,7 @@
 		<g:message code="news.author.label" default="Author" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="author" name="author.id" from="${fr.newland.users.User.list()}" optionKey="id" required="" value="${newsInstance?.author?.id}" class="many-to-one"/>
+	<g:select id="author" name="author.id" from="${User.list()}" optionKey="id" required="" value="${newsInstance?.author?.id}" class="many-to-one"/>
 
 </div>
 
